@@ -16,6 +16,10 @@ def clear_console():
         os.system("cls")
 
 
+def system_pause_console():
+    os.system("PAUSE")
+
+
 def first_startup_menu_dialog():
     print("Welcome to Triangle Finder\n\n")
     print("Enter a number to continue:")
@@ -96,3 +100,5 @@ elif int(user_choice) == 3:
             print("The combinations that you can make triangle is the below:")
             for i in range(0, len(all_possible_combinations_triangle_indexes), 1):
                 print(all_possible_combinations[all_possible_combinations_triangle_indexes[i]])
+
+system_pause_console()
