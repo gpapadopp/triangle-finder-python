@@ -1,3 +1,5 @@
+TRIANGLE FINDER PROGRAM
+
 With this program, the user can check if specific numbers can mathematically form a triangle.
 
 There are three cases in which this program can work, and they are as follows:
