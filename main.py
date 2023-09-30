@@ -33,16 +33,19 @@ user_choice = input("Your choice: ")
 console_functions.clear_console()
 
 if int(user_choice) == 1:
+    # User Defined Numbers
     all_user_numbers = read_number_list()
     algorithm_functions = UserNumbersAlgorithm(all_user_numbers)
     algorithm_functions.find_all_possible_triangles()
     algorithm_functions.print_data()
 elif int(user_choice) == 2:
+    # Predefined Numbers
     predefined_numbers = [7, 10, 5, 4, 8, 7]
     algorithm_functions = PredefinedAlgorithm(predefined_numbers)
     algorithm_functions.find_all_possible_triangles()
     algorithm_functions.print_data()
 elif int(user_choice) == 3:
+    # Array with Random Numbers
     list_length = input("Give the length of the array: ")
     start_number = input("Give the start number of the random function: ")
     end_number = input("Give the end number of the random function: ")
